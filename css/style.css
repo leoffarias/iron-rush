@@ -12,10 +12,12 @@
 		background-color: #fff;
 	}
 
-	@media(min-width: 663px) {
-		background-image: url(../images/tooplate-body.jpg);
-		background-repeat: repeat-x;
-		background-position: top;
+	@media(min-width: 668px) {
+		body {
+			background-image: url(../images/tooplate-body.jpg);
+			background-repeat: repeat-x;
+			background-position: top;
+		}
 	}
 
 	a, a:link, a:visited {
@@ -143,7 +145,7 @@
 		background:rgb(34,30,29);
 	}
 
-	@media(min-width: 663px) {
+	@media(min-width: 668px) {
 		#tooplate-wrapper {
 			background: url(../images/tooplate-header.jpg) top center no-repeat;
 		}
@@ -155,12 +157,12 @@
 		padding: 5px 0;
 	}
 
-	@media(max-width: 662px) {
+	@media(max-width: 667px) {
 		#tooplate-top-bar {
-		background:rgb(56,47,32);
-		border-bottom: 1px solid rgb(77,71,47);
-		height: 27px;
-	}
+			background:rgb(56,47,32);
+			border-bottom: 1px solid rgb(77,71,47);
+			height: 27px;
+		}
 	}
 
 	a.social-btn {
@@ -186,14 +188,14 @@
 		padding: 10px 0;
 	}
 
-	@media(min-width: 852px) {
-	#tooplate-header {
-		height:80px;
-	}
-	#site-title {
-		float: left;
-		margin: 0;
-	}
+	@media(min-width: 856px) {
+		#tooplate-header {
+			height:80px;
+		}
+		#site-title {
+			float: left;
+			margin: 0;
+		}
 	}
 
 	#site-title h1 {
@@ -210,14 +212,21 @@
 		background: url(../images/tooplate-logo.png) no-repeat top left;
 	}
 
-	/* menu */
-	@media(min-width: 852px) {
-	#tooplate-menu {
-		float: right;
-		width: 625px;
-		height: 65px;
-		margin: 0 auto;
+	@media(min-width: 668px) and (max-width: 855px) {
+		#tooplate-menu {
+			width: 625px;
+			height: 65px;
+			margin: 0 auto;
+		}
 	}
+	/* menu */
+	@media(min-width: 856px) {
+		#tooplate-menu {
+			float: right;
+			width: 625px;
+			height: 65px;
+			margin: 0 auto;
+		}
 	}
 
 	#tooplate-menu ul {
@@ -247,7 +256,7 @@
 		border: none;
 	}
 
-	@media(min-width: 663px){
+	@media(min-width: 668px){
 		#tooplate-menu ul li a {
 			float: left;
 			width: 125px;	
