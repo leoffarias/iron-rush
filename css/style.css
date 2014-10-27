@@ -40,6 +40,13 @@
 		background: url(../images/tooplate-more.png) no-repeat center right;
 	}
 
+	@media (max-width: 947px) {
+	a.more {
+		float:none;
+		margin-left:10px;
+	}
+	}	
+
 	a.more:hover {
 		text-shadow: 1px 1px 1px #555;
 	}
@@ -51,6 +58,7 @@
 
 	img {
 		border: none;
+		max-width:100%;
 	}
 
 	blockquote {
@@ -321,15 +329,29 @@
 	.col-w450 { width: 450px }
 	.col-w300 { width: 300px }
 	.col-w200 { width: 200px; margin-right: 50px; }
-	.col-allw300 { width: 300px; float: left; margin-right: 30px }
+	.col-allw300 { max-width: 300px; float: left; margin-right: 50px }
 	.col-last { margin: 0 }
+
+	@media(max-width: 947px) {
+		.col-allw300 {
+			border-bottom: 3px solid rgb(34,30,29);
+			max-width: 900px;
+			margin: 0 auto;
+			clear:both;
+			padding: 10px 0;
+			float:none;
+		}
+		.col-last {
+			border: 0;
+		}
+	}
 
 	.fp-lp-box {
 		display: block;
 		clear: both;
 		position: relative;
-		width: 290px;
-		height: 140px;
+		max-width: 290px;
+		max-height: 140px;
 		padding: 4px;
 		border: 1px solid #ccc;
 		margin-bottom: 10px;
