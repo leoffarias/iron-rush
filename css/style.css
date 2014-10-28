@@ -96,7 +96,7 @@
 	.h60 { height: 60px }
 
 	.float-l { float: left }
-	.float-r { float: right }
+	.float-r { float: left }
 
 	.image-wrapper {
 		display: inline-block;
@@ -328,9 +328,44 @@
 	.col-w600 { width: 600px }
 	.col-w450 { width: 450px }
 	.col-w300 { width: 300px }
-	.col-w200 { width: 200px; margin-right: 50px; }
+	.col-w200 { max-width: 200px; margin-right: 8%; }
 	.col-allw300 { max-width: 300px; float: left; margin-right: 50px }
 	.col-last { margin: 0 }
+
+	@media(max-width: 915px) and (min-width: 735px) {
+		.col-w200, .col-last {
+			margin-left:20%;
+			margin-right: 0;
+		}
+	}
+
+	@media(max-width: 734px) and (min-width: 600px) {
+		.col-w200, .col-last {
+			margin-left:15%;
+			margin-right: 0;
+		}
+	}
+
+		@media(max-width: 599px) and (min-width: 500px) {
+		.col-w200, .col-last {
+			margin-left:10%;
+			margin-right: 0;
+		}
+	}
+
+			@media(max-width: 499px) and (min-width: 412px) {
+		.col-w200, .col-last {
+			margin-left:5%;
+			margin-right: 0;
+		}
+	}
+
+				@media(max-width: 411px) {
+		.col-w200, .col-last {
+			margin-right:0;
+			margin-left:15%;
+		}
+	}
 
 	@media(max-width: 947px) {
 		.col-allw300 {
@@ -338,7 +373,7 @@
 			max-width: 900px;
 			margin: 0 auto;
 			clear:both;
-			padding: 10px 0;
+			padding: 10px 5px;
 			float:none;
 		}
 		.col-last {
